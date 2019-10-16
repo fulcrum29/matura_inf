@@ -32,5 +32,6 @@ str_tmp =""
 for k in linie[39::40]:
         str_tmp += k[9]
 
+
 print(str_tmp)
 
