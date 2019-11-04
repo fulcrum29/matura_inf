@@ -5,27 +5,36 @@ linie = []
 def wczytaj(file):
     with open(file) as plik:
         for linia in plik:
-            for i in linia:
-                print(i)
+            linie.append(linia.strip())
 
 
 wczytaj("liczby.txt")
 
-
-
+print(linie)
+def onenumber():
+    for linia in linie:
+        return linia
 
 def factorof():
-    factorial = 1
+
     for linia in linie:
+        b = 0
         for k in linia:
-            for d in range(1,k+1):
-                factorial = factorial * d
-                print(factorial)
+            if k == 0:
+                k = 1
+            factorial = 1
 
-
-
+            for a in range(1,int(k)+1):
+               factorial = factorial * a
+            b += factorial
+        if int(linia) == b:
+            print(linia)
+            print(b)
 
 
 
 
 factorof()
+
+
+
