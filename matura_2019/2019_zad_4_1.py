@@ -1,7 +1,9 @@
-
+import sys
 
 
 linie = []
+
+
 
 
 def wczytaj(file):
