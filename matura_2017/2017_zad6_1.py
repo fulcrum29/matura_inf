@@ -9,6 +9,8 @@ for lister in numery:
         flat_list.append(item.strip())
 
 flat_list = list(map(int, flat_list))
+print(flat_list)
+print(len(flat_list))
 print(max(flat_list))
 print(min(flat_list))
 
